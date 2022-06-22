@@ -4,38 +4,78 @@
     <title>Eric쿤</title>
     <meta charset="utf-8">
     <style>
+         body{
+            margin:0;
+        }
        a {
         color:black;
         text-decoration: none;
        }
+       .eric {
+        color:grey;
+       }
+       #gtx {
+        color:red;
+       }
        h1 {
         font-size:60px;
-        text-align: center;
+        text-align:center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+       }
+       #grid ol{
+        border-right:1px solid gray;
+        width:100px;
+        margin:0;
+        padding:20px;
+        padding-left:32px;
+       }
+       #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+       }
+       #article{
+        padding-left:25px;
+       }
+       @media(max-width:800px){
+        #grid{
+            display:block;
+        }
+        #grid ol{
+            border-right:none;
+        h1 {
+            border-bottom:none;
+        }
+        }
        }
     </style>
 </head>
 
 <body>
     <h1><a href="index.html">Eric</a></h1>
-    <ol>
-        <li><a href="가우스방정식.html">가우스방정식</a></li>
-        <li><a href="뉴턴방정식.html">뉴턴방정식</a></li>
-        <li><a href="gtx3060.html">GTX3060</a></li>
-    </ol>
-
-    <h2>Eric쿤</h2>
-        Eric쿤. 본명은 비밀. 그는 최근 GTX3060 그래픽카드를 구매하여 로스트아크 행복하게 친구들과 즐기고 있다.
-    <p>
-    <img src="jong.png" width="300px">
-    </p>
-    <p style="margin-top:30px">
-    개발자를 목표로하고있는 비전공자이다. 현재 비전공자 코딩을 공부하고 있으며, 생활코딩으로 web을 공부하고있다. 평일 오전 7시에 수영강습을 받고있으며, 사진찍는것을 좋아한다. <br>
-    블로그와 인스타그램 유튜브도 운영하고있다.(유튜브는 망한것 처럼 보인다.)
-    그는 커피와 홍차를 매우좋아한다. 그리고 돈까스도 엄청 좋아한다. 들리는 소식에의하면 그는 주로 닉네임을 "치즈돈까스매니아"로 사용하고있다고한다.
-    </p>
-    그의 대표적인 유튜브 영상은 하단과 같다. 
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zG0wlV9U33g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="가우스방정식.html">가우스방정식</a></li>
+            <li><a href="뉴턴방정식.html">뉴턴방정식</a></li>
+            <li><a href="gtx3060.html">GTX3060</a></li>
+        </ol>
+        <div id="article">
+            <h2>Eric쿤</h2>
+                Eric쿤. 본명은 비밀. 그는 최근 GTX3060 그래픽카드를 구매하여 로스트아크 행복하게 친구들과 즐기고 있다.
+            <p>
+            <img src="jong.png" width="300px">
+            </p>
+            <p style="margin-top:30px">
+            개발자를 목표로하고있는 비전공자이다. 현재 비전공자 코딩을 공부하고 있으며, 생활코딩으로 web을 공부하고있다. 평일 오전 7시에 수영강습을 받고있으며, 사진찍는것을 좋아한다. <br>
+            블로그와 인스타그램 유튜브도 운영하고있다.(유튜브는 망한것 처럼 보인다.)
+            그는 커피와 홍차를 매우좋아한다. 그리고 돈까스도 엄청 좋아한다. 들리는 소식에의하면 그는 주로 닉네임을 "치즈돈까스매니아"로 사용하고있다고한다.
+            </p>
+            그의 대표적인 유튜브 영상은 하단과 같다. 
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zG0wlV9U33g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </div>
+    </div>
 </body>
 </html>

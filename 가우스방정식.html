@@ -4,6 +4,9 @@
     <title>Eric - 가우스방정식</title>
     <meta charset="utf-8">
     <style>
+       body{
+            margin:0;
+        }
        a {
         color:black;
         text-decoration: none;
@@ -17,33 +20,64 @@
        h1 {
         font-size:60px;
         text-align:center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+       }
+       #grid ol{
+        border-right:1px solid gray;
+        width:100px;
+        margin:0;
+        padding:20px;
+        padding-left:32px;
+       }
+       #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+       }
+       #article{
+        padding-left:25px;
+       }
+       @media(max-width:800px){
+        #grid{
+            display:block;
+        }
+        #grid ol{
+            border-right:none;
+        h1 {
+            border-bottom:none;
+        }
+        }
        }
     </style>
 </head>
 
 <body>
     <h1><a href="index.html">Eric</a></h1>
-    <ol>
-        <li><a href="가우스방정식.html" class="eric" id="ga">가우스방정식</a></li>
-        <li><a href="뉴턴방정식.html" class="eric" id="new">뉴턴방정식</a></li>
-        <li><a href="gtx3060.html" class="eric" id="gtx">GTX3060</a></li>
-    </ol>
-
-    <h2>가우스방정식</h2>
-    <a href="https://namu.wiki/w/%ED%99%80%EB%A6%AC%EB%82%98%EC%9D%B4%ED%8A%B8" target="_blank" title="홀리나이트 나무위키 설명보기">홀리나이트</a>는 신념의 검과 신앙의 힘을 사용하는 <strong><u>서포트형</u> 클래스</strong>입니다.
-    성서를 이용한 신성 스킬 및 버프를 활용해 아군을 후방에서 지원하거나 검을 이용한 징벌 스킬들을 통해 전장의 선봉에 설 수 있습니다.
-    <p>
-    <img src="ga.jpeg" width="300px">
-    </p>
-    <p style="margin-top:30px">
-    신성의 오라 사용 시 추가로 받는 피해가 10.0/15.0/20.0% 감소되고 회복 효과가 발동되어 자신 및 파티원이 매 2.5/2.0/1.5초당 자신의 최대 생명력 2% 만큼 회복한다.
-    일명 모닥불. 이 각인을 맞출 시에 홀리나이트가 가진 힐스킬이 두개로 늘어난다. 패치 이전에는 피해감소 없이 지금보다 짧은 주기로 1%의 힐을 주는 각인이었으나,
-    패치 이후 피해감소효과가 추가되었고 힐 주기가 늘어난 대신 힐량이 2%로 올랐다.
-    해당 각인을 사용한 신성의 오라는 홀리나이트의 광역지속케어 끝판왕 스킬이 된다.
-    힐, 피해감소, 공버프가 동시에 들어가므로 어떤 상황이든 일단 켜기만하면 최소 일인분이 가능해진다. 기존의 애매하던 세이브 능력도 오라 지속시간동안 확연히 상승한다.
-    바드의 절실한 구원처럼 서폿 홀나라면 필수적으로 각성과 함께 3레벨은 찍어야하는 각인이다.
-    여기에 더해 바드에겐 선택사항에 가까운 '전문의' 각인이 축복의 오라 홀리나이트가 거의 필수로 채용하는 이유로 꼽힌다. 
-    홀리나이트의 부족한 세이브능력도 어느정도 보완해주기 때문에 더더욱 필수적으로 찍어주는 것이 좋다.
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="가우스방정식.html" class="eric" id="ga">가우스방정식</a></li>
+            <li><a href="뉴턴방정식.html" class="eric" id="new">뉴턴방정식</a></li>
+            <li><a href="gtx3060.html" class="eric" id="gtx">GTX3060</a></li>
+        </ol>
+        <div id="article">
+            <h2>가우스방정식</h2>
+            <a href="https://namu.wiki/w/%ED%99%80%EB%A6%AC%EB%82%98%EC%9D%B4%ED%8A%B8" target="_blank" title="홀리나이트 나무위키 설명보기">홀리나이트</a>는 신념의 검과 신앙의 힘을 사용하는 <strong><u>서포트형</u> 클래스</strong>입니다.
+                성서를 이용한 신성 스킬 및 버프를 활용해 아군을 후방에서 지원하거나 검을 이용한 징벌 스킬들을 통해 전장의 선봉에 설 수 있습니다.
+                <p>
+                <img src="ga.jpeg" width="300px">
+            </p>
+            <p style="margin-top:30px">
+                신성의 오라 사용 시 추가로 받는 피해가 10.0/15.0/20.0% 감소되고 회복 효과가 발동되어 자신 및 파티원이 매 2.5/2.0/1.5초당 자신의 최대 생명력 2% 만큼 회복한다.
+                일명 모닥불. 이 각인을 맞출 시에 홀리나이트가 가진 힐스킬이 두개로 늘어난다. 패치 이전에는 피해감소 없이 지금보다 짧은 주기로 1%의 힐을 주는 각인이었으나,
+                패치 이후 피해감소효과가 추가되었고 힐 주기가 늘어난 대신 힐량이 2%로 올랐다.
+                해당 각인을 사용한 신성의 오라는 홀리나이트의 광역지속케어 끝판왕 스킬이 된다.
+                힐, 피해감소, 공버프가 동시에 들어가므로 어떤 상황이든 일단 켜기만하면 최소 일인분이 가능해진다. 기존의 애매하던 세이브 능력도 오라 지속시간동안 확연히 상승한다.
+                바드의 절실한 구원처럼 서폿 홀나라면 필수적으로 각성과 함께 3레벨은 찍어야하는 각인이다.
+                여기에 더해 바드에겐 선택사항에 가까운 '전문의' 각인이 축복의 오라 홀리나이트가 거의 필수로 채용하는 이유로 꼽힌다. 
+                홀리나이트의 부족한 세이브능력도 어느정도 보완해주기 때문에 더더욱 필수적으로 찍어주는 것이 좋다.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
