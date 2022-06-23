@@ -12,13 +12,18 @@
             <li><a href="가우스방정식.html" class="eric" id="ga">가우스방정식</a></li>
             <li><a href="뉴턴방정식.html" class="eric" id="new">뉴턴방정식</a></li>
             <li><a href="gtx3060.html" class="eric" id="gtx">GTX3060</a></li>
-        
-            <input type="button" value="night" style="width:50px;height:30px" onclick="
-            document.querySelector('body').style.background='black';
-            document.querySelector('body').style.color='white'">
-            <input type="button" value="day" style="width:50px;height:30px"onclick="
-            document.querySelector('body').style.background='white';
-            document.querySelector('body').style.color='black'">
+     
+            <input id="night_day" type="button" value="night mode" style="width:90px;height:30px" onclick="
+            if(document.querySelector('#night_day').value ==='night mode'){
+                document.querySelector('body').style.background='black';
+                document.querySelector('body').style.color='white';
+                document.querySelector('#night_day').value = 'day mode';
+            } else {
+                document.querySelector('body').style.background='white';
+                document.querySelector('body').style.color='black';
+                document.querySelector('#night_day').value = 'night mode';
+            }
+            ">
         </ol>
         
         <div id="article">
