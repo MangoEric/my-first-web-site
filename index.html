@@ -13,15 +13,31 @@
             <li><a href="뉴턴방정식.html" class="eric" id="new">뉴턴방정식</a></li>
             <li><a href="gtx3060.html" class="eric" id="gtx">GTX3060</a></li>
 
-            <input id="night_day" type="button" value="night mode" style="width:90px;height:30px" onclick="
-            if(document.querySelector('#night_day').value ==='night mode'){
-                document.querySelector('body').style.background='black';
-                document.querySelector('body').style.color='white';
-                document.querySelector('#night_day').value = 'day mode';
+            <input type="button" value="night mode" style="width:90px;height:30px" onclick="
+            var target = document.querySelector('body');
+            if(this.value ==='night mode'){
+                target.style.color='white';
+                target.style.background='black';
+                this.value = 'day mode';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'powderblue';
+                    i = i + 1;
+                }
+
             } else {
-                document.querySelector('body').style.background='white';
-                document.querySelector('body').style.color='black';
-                document.querySelector('#night_day').value = 'night mode';
+                target.style.background='white';
+                target.style.color='black';
+                this.value = 'night mode';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'blue';
+                    i = i + 1;
+                }
             }
             ">
         </ol>
@@ -40,6 +56,17 @@
             <p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/zG0wlV9U33g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
+            <input type="button" value="night mode" style="width:90px;height:30px" onclick="
+            if(this.value ==='night mode'){
+                document.querySelector('body').style.background='black';
+                document.querySelector('body').style.color='white';
+                this.value = 'day mode';
+            } else {
+                document.querySelector('body').style.background='white';
+                document.querySelector('body').style.color='black';
+                this.value = 'night mode';
+            }
+            ">
         </div>
     </div>
 </body>

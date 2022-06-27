@@ -14,15 +14,31 @@
             <li><a href="뉴턴방정식.html" class="eric" id="new">뉴턴방정식</a></li>
             <li><a href="gtx3060.html" class="eric" id="gtx">GTX3060</a></li>
 
-            <input id="night_day" type="button" value="night mode" style="width:90px;height:30px" onclick="
-            if(document.querySelector('#night_day').value ==='night mode'){
-                document.querySelector('body').style.background='black';
-                document.querySelector('body').style.color='white';
-                document.querySelector('#night_day').value = 'day mode';
+            <input type="button" value="night mode" style="width:90px;height:30px" onclick="
+            var target = document.querySelector('body');
+            if(this.value ==='night mode'){
+                target.style.color='white';
+                target.style.background='black';
+                this.value = 'day mode';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'powderblue';
+                    i = i + 1;
+                }
+
             } else {
-                document.querySelector('body').style.background='white';
-                document.querySelector('body').style.color='black';
-                document.querySelector('#night_day').value = 'night mode';
+                target.style.background='white';
+                target.style.color='black';
+                this.value = 'night mode';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'blue';
+                    i = i + 1;
+                }
             }
             ">
         </ol>
@@ -45,6 +61,17 @@
                 흔히 사거리 긴 직업군이라 하면 서머너, 건슬링어, 호크아이 등을 떠올리기 쉬운데, 스카우터의 사거리는 그들을 능가할 정도다.
                 플레어 빔이나 레이드 미사일 같은 건 그냥 써도 모니터 끝자락의 적을 문제없이 타격할 수 있을 정도인데, 드론을 멀리 보내놓고 쓰면 거기서부터 스킬이 쏘아져 나가는지라 그야말로 로스트아크 내 최고 수준의 사거리를 자랑한다. 사거리가 길다는 것은 적에게 접근할 필요 없이 멀리서 안정적으로 견제 및 딜링을 꽂을 수 있다는 것을 의미한다. 이러한 드론 활용이야말로 스카우터의 가장 큰 특장점이라 할 수 있는데, 기술 각인의 경우 이러한 이점을 살려 원거리에서 수월하게 딜을 투사하는 것이 가능하고, 유산 각인 또한 다른 변신 직업군인 충모닉에 비하면 훨씬 더 먼 거리에서 안전하고 빠르게 변신 게이지를 수급할 수 있다.
             </p>
+            <input type="button" value="night mode" style="width:90px;height:30px" onclick="
+            if(this.value ==='night mode'){
+                document.querySelector('body').style.background='black';
+                document.querySelector('body').style.color='white';
+                this.value = 'day mode';
+            } else {
+                document.querySelector('body').style.background='white';
+                document.querySelector('body').style.color='black';
+                this.value = 'night mode';
+            }
+            ">
         </div>
     </div>
 </body>
