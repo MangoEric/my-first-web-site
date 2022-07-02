@@ -4,34 +4,7 @@
     <title>Eric - 뉴턴방정식</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script>
-        function nightDayHandler(self){
-            var target = document.querySelector('body');
-                            if(self.value ==='night mode'){
-                                target.style.color='white';
-                                target.style.background='black';
-                                self.value = 'day mode';
-    
-                                var alist = document.querySelectorAll('a');
-                                var i = 0;
-                                while(i < alist.length){
-                                    alist[i].style.color = 'powderblue';
-                                    i = i + 1;
-                                }
-                            } else {
-                                target.style.background='white';
-                                target.style.color='black';
-                                self.value = 'night mode';
-    
-                                var alist = document.querySelectorAll('a');
-                                var i = 0;
-                                while(i < alist.length){
-                                    alist[i].style.color = 'blue';
-                                    i = i + 1;
-                                }
-                            }
-                        }
-    </script>
+    <script src="color.js"></script>
 </head>
 
 <body>
