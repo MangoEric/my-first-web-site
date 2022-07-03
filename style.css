@@ -33,3 +33,9 @@ h1 {
 }
 }
 }
+@font-face {
+    font-family: "DungGeunMo";
+    src: url("DungGeunMo.ttf");
+  }
+body { font-family: "DungGeunMo", serif }
+input { font-family: "DungGeunMo", serif }
